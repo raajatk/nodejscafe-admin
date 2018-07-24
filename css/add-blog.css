@@ -1,0 +1,33 @@
+div.outerbox {
+  background-color: lightgrey;
+  width: 1000px;
+  /* border: 25px solid #306686; */
+  padding: 25px;
+  margin: 25px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.submit-button{
+  margin-bottom: 20px;
+  margin-left: 855px;
+
+}
+
+div.resbox {
+  background-color: white;
+  width: 1000px;
+  /* border: 25px solid #306686; */
+  padding: 25px;
+  margin: 25px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
