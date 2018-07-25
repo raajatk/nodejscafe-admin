@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
 
     <!-- Include Editor style. -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css" rel="stylesheet" type="text/css" />
     <link href="css/add-blog.css" rel="stylesheet" type="text/css" />
   </head>
   <body ng-controller="appCtrl">
     <center>Please Enter your text</center>
+
+    <!-- <div class="titlebox">
+      <div class="inputdiv">
+        <input type="text" class="inputbox" value="HEY this is the text box"></input>
+      </div>
+
+      <div class="buttondiv">
+        <button class="submit-button" type="button" ng-click="onSubmit(data)">SUBMIT</button>
+      </div>
+    </div>
+
     <div class="outerbox">
       <button class="submit-button" type="button" ng-click="onSubmit(data)">SUBMIT</button>
       <div id="froala-editor">
@@ -27,6 +38,30 @@
 
     <div class="resbox" ng-bind-html="resData">
 
+    </div> -->
+
+    <div class="main-div">
+      <div class="title-div">
+        <div class="title-text">TITLE</div>
+        <button class="submit-button" type="button" ng-click="onSubmit(data)">SUBMIT</button>
+      </div>
+
+      <div class="inputbox-div">
+        <input type="text" class="inputbox" placeholder="Blog Title..."></input>
+      </div>
+
+      <div class="matter-div">
+        <div class="title-text">MATTER</div>
+      </div>
+
+      <div class="editor-div">
+        <div id="froala-editor">
+          <p>{{data}}</p>
+        </div>
+        <br/>
+        <pre id="eg-previewer" class="prettyprint linenums:1">
+        </pre>
+      </div>
     </div>
 
     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
