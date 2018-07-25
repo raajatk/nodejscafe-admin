@@ -41,7 +41,7 @@ app.controller("appCtrl", ["$scope","CommonService","$http",function ($scope,Com
         $http({
           url:"http://localhost:3000/api/v1.0/nodejscafe/post_blog",
           method:"POST",
-          data:{blog:$scope.data},//JSON.stringify({blog:$scope.data}),
+          data:{title:$scope.title,blog:$scope.data},//JSON.stringify({blog:$scope.data}),
           headers:{"Content-Type":"application/json"}
         }).then(function(response){
           console.log("the res is ",response.data.object.matter);

@@ -14,7 +14,9 @@
     <link href="css/add-blog.css" rel="stylesheet" type="text/css" />
   </head>
   <body ng-controller="appCtrl">
-    <center>Please Enter your text</center>
+    <div style="text-align: center;"><span style="color: rgb(41, 105, 176);font-family: Verdana,Geneva,sans-serif;"><strong><span style="font-size: 48px;">NODE-JS-CAFE ADMIN</span></strong>
+    	</span>
+    </div>
 
     <!-- <div class="titlebox">
       <div class="inputdiv">
@@ -42,16 +44,20 @@
 
     <div class="main-div">
       <div class="title-div">
-        <div class="title-text">TITLE</div>
+        <div class="title-text">
+          TITLE
+        </div>
         <button class="submit-button" type="button" ng-click="onSubmit(data)">SUBMIT</button>
       </div>
 
       <div class="inputbox-div">
-        <input type="text" class="inputbox" placeholder="Blog Title..."></input>
+        <input type="text" class="inputbox" placeholder="Blog Title..." ng-model="title"></input>
       </div>
 
       <div class="matter-div">
-        <div class="title-text">MATTER</div>
+        <div class="title-text">
+            MATTER
+        </div>
       </div>
 
       <div class="editor-div">
